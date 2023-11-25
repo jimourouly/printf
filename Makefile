@@ -6,7 +6,7 @@
 #    By: jroulet <marvin@42lausanne.ch>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/18 20:02:41 by jroulet           #+#    #+#              #
-#    Updated: 2023/11/18 20:57:35 by jroulet          ###   ########.fr        #
+#    Updated: 2023/11/25 17:19:58 by jroulet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRCS = 	ft_printf.c\
 		ft_print_ptr.c\
 		ft_print_nbr.c\
 		ft_print_hex.c\
-		ft_print_uitoa.c\
+		ft_uitoa.c\
 
 OBJS = $(SRCS:.c=.o)
 

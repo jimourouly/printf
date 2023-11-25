@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int		ft_print_ptr(unsigned long ptr);
 void	ft_ptr_calc(uintptr_t ptr);

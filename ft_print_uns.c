@@ -6,11 +6,11 @@
 /*   By: jroulet <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 16:31:36 by jroulet           #+#    #+#             */
-/*   Updated: 2023/11/18 20:58:47 by jroulet          ###   ########.fr       */
+/*   Updated: 2023/11/25 21:10:31 by jroulet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_print_uns(unsigned int uns)
 {
@@ -18,9 +18,16 @@ int	ft_print_uns(unsigned int uns)
 	char	*res;
 
 	length = 0;
-	res = ft_uitoa(uns);
-	length += ft_print_str(res);
-	free(res);
+	if (uns == 0)
+	{
+		length += write(1, "0", 1);
+	}
+	else
+	{
+		res = ft_uitoa(uns);
+		length += ft_print_str(res);
+		free(res);
+	}
 	return (length);
 }
 
